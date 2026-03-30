@@ -1,0 +1,23 @@
+#pascal-editor-root {
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+#pascal-editor-root .h-full {
+  height: 100%;
+}
+
+#pascal-editor-root .w-full {
+  width: 100%;
+}
+
+#pascal-editor-root .flex {
+  display: flex;
+}
+
+#pascal-editor-root .flex-1 {
+  flex: 1;
+}
+
+#pascal-editor-root .relative {
+  position: relative;
+}

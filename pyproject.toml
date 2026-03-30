@@ -1,0 +1,14 @@
+[project]
+name = "ComfyUI-PascalEditor"
+description = "ComfyUI plugin that integrates Pascal 3D architectural editor"
+version = "0.1.0"
+license = {file = "LICENSE"}
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/jtydhr88/ComfyUI-PascalEditor"
+
+[tool.comfy]
+DisplayName = "ComfyUI Pascal Editor"
+Icon = ""
+includes = ['js']
