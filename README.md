@@ -23,7 +23,7 @@ Clone this repository into your ComfyUI `custom_nodes` directory:
 
 ```bash
 cd ComfyUI/custom_nodes
-git clone https://github.com/pascalorg/ComfyUI-PascalEditor.git
+git clone https://github.com/jtydhr88/ComfyUI-PascalEditor.git
 ```
 
 Restart ComfyUI. The **Pascal Editor** node will appear under the `PascalEditor` category.
