@@ -23,7 +23,7 @@
 
 ```bash
 cd ComfyUI/custom_nodes
-git clone https://github.com/pascalorg/ComfyUI-PascalEditor.git
+git clone https://github.com/jtydhr88/ComfyUI-PascalEditor.git
 ```
 
 重启 ComfyUI，**Pascal Editor** 节点将出现在 `PascalEditor` 分类下。
