@@ -9,6 +9,7 @@ dependencies = []
 Repository = "https://github.com/jtydhr88/ComfyUI-PascalEditor"
 
 [tool.comfy]
+PublisherId = "jtydhr88"
 DisplayName = "ComfyUI Pascal Editor"
 Icon = ""
 includes = ['js']
