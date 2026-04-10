@@ -1,5 +1,5 @@
 :HL["/pascal-editor/_next/static/chunks/0wa2xngcu-mn..css","style"]
-:HL["/pascal-editor/_next/static/chunks/0t73wzx6-yjd7.css","style"]
+:HL["/pascal-editor/_next/static/chunks/169z_keo.7k.3.css","style"]
 :HL["/pascal-editor/_next/static/media/0595f7052377a1a2-s.p.0u0xtu5i3hze-.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/pascal-editor/_next/static/media/6c98c9fb873995d2-s.p.0o4ax6vjjs2k3.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/pascal-editor/_next/static/media/GeistMonoVF-s.p.0ifhplp~93ddj.woff","font",{"crossOrigin":"","type":"font/woff"}]
@@ -11,4 +11,4 @@
 :HL["/pascal-editor/_next/static/media/GeistVF-s.p.04dvp7dj03si8.woff","font",{"crossOrigin":"","type":"font/woff"}]
 :HL["/pascal-editor/_next/static/media/a083361d37caf3d1-s.p.08pvxdps0wo-e.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/pascal-editor/_next/static/media/c6e2684784a55443-s.p.0v346keojskif.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"privacy","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"nU0O20mdWwLqiWSkXnnHt"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"privacy","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"-hwCLMhE9a5FtIpznHfsI"}
