@@ -132,6 +132,40 @@ function createPascalEditorWidget(node: any) {
         }
     }
 
+    // Preview output overlay — send state to iframe when widgets change
+    let iframeReady = false
+
+    const sendPreviewState = () => {
+        if (!iframeReady) return
+        const previewWidget = node.widgets?.find((w: any) => w.name === 'preview_output')
+        const widthWidget = node.widgets?.find((w: any) => w.name === 'width')
+        const heightWidget = node.widgets?.find((w: any) => w.name === 'height')
+        iframe.contentWindow?.postMessage({
+            type: 'pascal-editor:setPreviewOverlay',
+            enabled: !!previewWidget?.value,
+            width: widthWidget?.value ?? 1024,
+            height: heightWidget?.value ?? 1024,
+        }, '*')
+    }
+
+    const readyHandler = (event: MessageEvent) => {
+        if (event.source !== iframe.contentWindow) return
+        if (event.data?.type === 'pascal-editor:ready') {
+            iframeReady = true
+            sendPreviewState()
+        }
+    }
+    window.addEventListener('message', readyHandler)
+
+    setTimeout(() => {
+        const widthWidget = node.widgets?.find((w: any) => w.name === 'width')
+        const heightWidget = node.widgets?.find((w: any) => w.name === 'height')
+        const previewWidget = node.widgets?.find((w: any) => w.name === 'preview_output')
+        if (widthWidget) widthWidget.callback = () => sendPreviewState()
+        if (heightWidget) heightWidget.callback = () => sendPreviewState()
+        if (previewWidget) previewWidget.callback = () => sendPreviewState()
+    }, 100)
+
     node.addWidget('button', 'Export GLB', 'export_glb', () => {
         sendToIframe(node._pascalEditorIframe, { type: 'pascal-editor:export', format: 'glb' })
     })

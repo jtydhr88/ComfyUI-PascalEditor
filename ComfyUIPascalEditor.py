@@ -14,6 +14,7 @@ class ComfyUIPascalEditor:
             "required": {
                 "width": ("INT", {"default": 1024, "min": 1, "max": 4096, "step": 1}),
                 "height": ("INT", {"default": 1024, "min": 1, "max": 4096, "step": 1}),
+                "preview_output": ("BOOLEAN", {"default": False}),
             },
             "hidden": {
                 "image": ("STRING", {"default": ""}),
@@ -29,7 +30,7 @@ class ComfyUIPascalEditor:
 
     CATEGORY = "PascalEditor"
 
-    def run(self, width=1024, height=1024, image="", **kwargs):
+    def run(self, width=1024, height=1024, preview_output=False, image="", **kwargs):
         if not image:
             return (torch.zeros(1, height, width, 3),)
 

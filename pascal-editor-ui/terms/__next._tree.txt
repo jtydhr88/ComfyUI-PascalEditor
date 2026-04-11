@@ -11,4 +11,4 @@
 :HL["/pascal-editor/_next/static/media/GeistVF-s.p.04dvp7dj03si8.woff","font",{"crossOrigin":"","type":"font/woff"}]
 :HL["/pascal-editor/_next/static/media/a083361d37caf3d1-s.p.08pvxdps0wo-e.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/pascal-editor/_next/static/media/c6e2684784a55443-s.p.0v346keojskif.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"terms","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"-hwCLMhE9a5FtIpznHfsI"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"terms","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"RmsjWv25vtbVRluT5xFnS"}
