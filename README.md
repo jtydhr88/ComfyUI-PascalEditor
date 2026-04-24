@@ -6,9 +6,26 @@ A ComfyUI plugin that integrates [Pascal Editor](https://github.com/pascalorg/ed
 
 ![Pascal Editor in ComfyUI](docs/preview.png)
 
+## What's New (v0.3.0)
+
+This release updates the bundled Pascal Editor from `0.3.x` to upstream **[v0.6.0](https://github.com/pascalorg/editor/blob/main/CHANGELOG.md)**, bringing a large batch of editor improvements into the ComfyUI plugin:
+
+- **Multi-surface material system** — per-surface materials for walls, stairs, and roofs with click-targeted 3D editing
+- **13 material presets** — granite, marble, parquet, wallpaper, wood, and more
+- **Automatic wall-room generation** — closed wall loops auto-split and generate slabs + auto ceilings
+- **Stair-slab integration** — stair-driven cutouts in slabs and ceilings
+- **Curved walls and curved fences** (+ endpoint move tools)
+- **Street view / walkthrough mode**
+- **Editor layout redesign v2** + 3D box select
+- **Move / rotate building** + relative positioning for all tools
+- **Grid snap toolbar controls** and **cut-out button** in the floating action menu for slabs and ceilings
+- **Editable wall length slider** and infinity-dragging sliders
+- **WebGPU renderer** improvements and fallbacks
+- Numerous crash, undo/redo, snapping, and post-processing fixes
+
 ## Features
 
-- **Full 3D Architectural Editor** — Create and edit buildings, walls, floors, ceilings, roofs, doors, windows, and zones directly in a ComfyUI node
+- **Full 3D Architectural Editor** — Create and edit buildings, walls, floors, ceilings, roofs, doors, windows, stairs, fences, and zones directly in a ComfyUI node
 - **Screenshot Output** — Automatically captures the current 3D viewport as an IMAGE output when running the workflow, ready for img2img, ControlNet, etc.
 - **Configurable Resolution** — Width/height controls on the node determine the output image size (center-crop + LANCZOS scaling, no distortion)
 - **3D Model Export** — Export your designs as GLB, STL, or OBJ via node buttons

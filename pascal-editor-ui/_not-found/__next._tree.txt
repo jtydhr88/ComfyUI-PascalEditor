@@ -1,3 +1,3 @@
 :HL["/pascal-editor/_next/static/chunks/0wa2xngcu-mn..css","style"]
-:HL["/pascal-editor/_next/static/chunks/169z_keo.7k.3.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"RmsjWv25vtbVRluT5xFnS"}
+:HL["/pascal-editor/_next/static/chunks/073lnd7npfk47.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"-TDfGH33Uqsf2E_ZMgqHX"}
