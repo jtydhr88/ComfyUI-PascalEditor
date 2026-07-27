@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,298069,t=>{"use strict";var i=t.i(843476);t.i(592888);var o=t.i(346579),s=t.i(408443);t.s(["default",0,()=>(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(o.DoorAnimationSystem,{}),(0,i.jsx)(s.DoorSystem,{})]})])}]);

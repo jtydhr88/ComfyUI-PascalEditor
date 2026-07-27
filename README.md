@@ -6,22 +6,28 @@ A ComfyUI plugin that integrates [Pascal Editor](https://github.com/pascalorg/ed
 
 ![Pascal Editor in ComfyUI](docs/preview.png)
 
-## What's New (v0.3.0)
+## What's New (v0.4.0)
 
-This release updates the bundled Pascal Editor from `0.3.x` to upstream **[v0.6.0](https://github.com/pascalorg/editor/blob/main/CHANGELOG.md)**, bringing a large batch of editor improvements into the ComfyUI plugin:
+This release updates the bundled Pascal Editor from `0.6.0` to upstream **[v0.9.1](https://github.com/pascalorg/editor)**, bringing four minor versions of editor improvements into the ComfyUI plugin:
 
-- **Multi-surface material system** — per-surface materials for walls, stairs, and roofs with click-targeted 3D editing
-- **13 material presets** — granite, marble, parquet, wallpaper, wood, and more
-- **Automatic wall-room generation** — closed wall loops auto-split and generate slabs + auto ceilings
-- **Stair-slab integration** — stair-driven cutouts in slabs and ceilings
-- **Curved walls and curved fences** (+ endpoint move tools)
-- **Street view / walkthrough mode**
-- **Editor layout redesign v2** + 3D box select
-- **Move / rotate building** + relative positioning for all tools
-- **Grid snap toolbar controls** and **cut-out button** in the floating action menu for slabs and ceilings
-- **Editable wall length slider** and infinity-dragging sliders
-- **WebGPU renderer** improvements and fallbacks
-- Numerous crash, undo/redo, snapping, and post-processing fixes
+- **Paint slots material system v2** — per-slot painting (slab top/side split), dynamic material library with browse categories and create-in-place scene materials
+- **Vertical building model** — stored level heights, wall inversion, and decks
+- **Group manipulation** — Photoshop-style multi-selection move, rotate, and duplicate
+- **Placement & interaction overhaul** — FSM-driven placement, mode-aware snapping for walls/fences/roofs/stairs/MEP, contextual HUD
+- **Baked GLB export** — animation clips baked in (doors, fans), GLB walkthrough viewer with LOD, texture-reference export mode
+- **Floorplan upgrades** — multi-page PDF export per level, construction documentation, much faster navigation
+- **Measurement tools** — production measurement tools, natural-language measurement inputs, metric/imperial honored in every length input
+- **Rendering & lighting pass** — sun-dominant look, sky backdrop, grounded horizon
+- **Plugin system** — plugin contract + first-party Nature pack (trees, flowers, grass)
+- **Walkthrough improvements** — crouch, wider FOV, tuned walk/run/jump speeds, unified viewer UI
+- New door open-animations (sliding/garage/folding/pocket/barn), horizontal-board fence style, SFX, and hundreds of fixes
+
+Note: upstream's cloud scene API and realtime collaboration are server features and are not part of this static in-ComfyUI build.
+
+Plugin-side changes:
+
+- Scene load/save now goes through upstream's build JSON validation and keeps installed-plugin state; loading correctly resets undo history
+- The editor's new `fonts/`, `hdri/`, and `material/` asset roots are now served by the plugin routes
 
 ## Features
 
@@ -90,13 +96,14 @@ npm run build
 
 ### Rebuild the Editor UI
 
-The `pascal-editor-ui/` directory contains the pre-built editor. To rebuild from source:
+The `pascal-editor-ui/` directory contains the pre-built editor. To rebuild from source, check out the `feat/comfyui-plugin-v3` branch of [pascalorg/editor](https://github.com/pascalorg/editor) and run:
 
 ```bash
-bash build-editor.sh
+bun install
+bun scripts/build-comfyui.mjs
 ```
 
-This script builds the Pascal Editor as a static export and copies the output to the plugin directory.
+Then copy `apps/editor/out/` over this plugin's `pascal-editor-ui/` directory.
 
 ## Credits
 

@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,24187,e=>{"use strict";var t=e.i(881660);e.s(["useDrawingView",()=>t.default])}]);

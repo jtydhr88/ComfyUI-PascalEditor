@@ -16,7 +16,7 @@ routes = PromptServer.instance.routes
 
 EDITOR_UI_DIR = Path(__file__).parent / 'pascal-editor-ui'
 
-ASSET_PREFIXES = ['icons', 'audios', 'items', 'demos']
+ASSET_PREFIXES = ['icons', 'audios', 'items', 'demos', 'fonts', 'hdri', 'material']
 
 
 @routes.get('/pascal-editor')
